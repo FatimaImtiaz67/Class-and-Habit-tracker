@@ -1,0 +1,87 @@
+/* //header.module.css */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--header-height);
+
+	display: flex;
+	justify-content: space-between; /* LEFT & RIGHT separation */
+	align-items: center;
+
+	padding: 0 1.6rem;
+	z-index: 99;
+
+	background: linear-gradient(to right, #ddddfa, #dcbddc); /* lavender gradient */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* logo */
+.logoWrapper {
+	/* outline: 1px solid tomato; */
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.logo {
+	width: 1.8rem;
+	height: 1.8rem;
+	background: url('/public/favicon.png') no-repeat center center;
+	background-size: contain;
+}
+
+.header h1 {
+	font-size: 1.6rem;
+	color: #4b0082; /* optional deep lavender */
+	margin: 0;
+}
+
+
+/* btnsWrapper */
+.navList {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.dropdownMenu {
+  position: absolute;          /* Position it relative to nearest positioned ancestor */
+  top: 100%;                  /* Just below the button */
+  left: 0;
+  background-color: white;    /* White background */
+  border: 1px solid #ccc;     /* Light border */
+  border-radius: 4px;         /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 0.5rem 0;          /* Vertical padding */
+  min-width: 140px;           /* Minimum width */
+  z-index: 100;               /* Make sure it’s above other content */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;               /* Space between buttons */
+}
+
+/* Style buttons inside dropdown */
+.dropdownMenu button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownMenu button:hover,
+.dropdownMenu button:focus {
+  background-color: #f0eaff; /* Lavender-ish highlight on hover */
+  outline: none;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+

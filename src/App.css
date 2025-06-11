@@ -1,0 +1,13 @@
+.App {
+	padding: 0;
+	padding-top: var(--header-height);
+	margin: 0;
+	box-sizing: border-box;
+  }
+
+.text-button {
+	background-color: transparent;
+	color: dodgerblue;
+	font-size: inherit;
+	font-family: inherit;
+}

@@ -1,0 +1,27 @@
+.emptyState {
+	text-align: center;
+	padding: 2rem;
+	color: var(--text-color-secondary);
+}
+
+.imageWrapper {
+	width: 100px;
+	margin: 0 auto 1rem;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 1rem;
+	background-color: var(--accent-color);
+	color: white;
+	border-radius: 6px;
+	text-decoration: none;
+	margin-top: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: var(--accent-color-dark);
+}

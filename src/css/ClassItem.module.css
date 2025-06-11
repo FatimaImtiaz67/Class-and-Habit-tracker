@@ -1,0 +1,66 @@
+/* src/css/ClassItem.module.css */
+
+.classItem {
+	background-color: var(--bg-color-primary);
+	border-radius: var(--border-radius-primary);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: start;
+	gap: 1rem;
+	padding: 1rem;
+	transition: transform 0.2s ease;
+	flex-direction: column; 
+	align-items: flex-start; 
+	margin: 1rem;
+}
+
+.classItem:hover {
+	transform: translateY(-2px);
+	background-color: rgb(201, 213, 246);
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	border-radius: 50%;
+	color: black;
+	background-color: var(--color-0);
+	flex-shrink: 0;
+}
+
+.textContent {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.textContent h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.calendarWrapper {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+
+.meta {
+	font-size: 0.9rem;
+	color: var(--text-color-tertiary);
+}
+
+@media screen and (min-width: 576px) {
+	.classItem {
+		max-width: 320px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+

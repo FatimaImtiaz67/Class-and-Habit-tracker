@@ -1,0 +1,89 @@
+
+/* SignIn.module.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.authContainer { 
+  width: 100%;
+ min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -60px;
+}
+
+.formBox {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  text-align: center;
+}
+
+.formBox h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formBox input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  cursor: pointer;
+}
+
+.formBox button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formBox button:hover {
+  background-color: #0056b3;
+}
+
+.formBox p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.formBox a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.formBox a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
