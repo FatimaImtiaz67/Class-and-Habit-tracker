@@ -9,7 +9,7 @@ const firebaseConfig = {
   databaseURL: "",
   projectId: "",
   storageBucket: "",
-  messagingSenderId: "76096707349",
+  messagingSenderId: "",
   appId: "",
   measurementId: "G-59059ZJ9SH"
 };
